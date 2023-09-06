@@ -27,7 +27,7 @@ After completing the steps above, you should be able to answer (and understand w
 
 Once you're done, notify your mentor/lead in the appropriate [PR (pull request)][PR] (checkmark this step in [README](../README.md)), and he will examine what you have learned.
 
-- [x]
+-[x]
 
 
 [Core Libraries]: https://dart.dev/guides/libraries
