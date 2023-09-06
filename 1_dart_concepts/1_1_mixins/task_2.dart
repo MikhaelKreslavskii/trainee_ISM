@@ -3,5 +3,5 @@ void main() {
   //
   // Extension should return a [List] of texts and links, e.g.:
   // - `Hello, google.com, yay` ->
-  //   [Text('Hello, '), Link('google.com'), Text(', yay')]. 
+  //   [Text('Hello, '), Link('google.com'), Text(', yay')].
 }
