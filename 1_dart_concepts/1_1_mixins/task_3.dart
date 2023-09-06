@@ -3,43 +3,7 @@ import 'dart:html';
 /// Object equipable by a [Character].
 abstract class Item {}
 
-class Weapon extends Item{
 
-  bool sword = false;
-  bool gun = false;
-
-
-
-}
-
-class Armor extends Item{
-
-}
-
-mixin Damage on Weapon{
-
-  int getDamage()
-  {
-    int countDamage =0;
-    if(sword==true)
-    {
-      countDamage+=3;
-    }
-    if (gun == true)
-    {
-      countDamage +=5;
-    }
-
-    return countDamage;
-  }
-
-}
-
-mixin Defend on Armor
-
-{
-
-}
 class Character {
   Item? leftHand;
   Item? rightHand;
@@ -56,7 +20,7 @@ class Character {
   int get damage {
     
     // TODO: Implement me.
-    return leftHand.;
+    return 0;
   }
 
   /// Returns the total defense of this [Character].
