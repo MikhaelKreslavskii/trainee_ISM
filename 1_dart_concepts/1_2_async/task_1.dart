@@ -1,3 +1,5 @@
+import 'dart:async';
+
 /// Collection of [messages] allowed to be [read].
 class Chat {
   Chat(this.onRead);
@@ -15,6 +17,7 @@ class Chat {
   void read(int message) {
     // TODO: [onRead] should be invoked no more than 1 time in a second.
 
+    
     onRead(message);
   }
 }

@@ -56,7 +56,7 @@ class Character {
   int get damage {
     
     // TODO: Implement me.
-    return leftHand.;
+    return 0;
   }
 
   /// Returns the total defense of this [Character].
