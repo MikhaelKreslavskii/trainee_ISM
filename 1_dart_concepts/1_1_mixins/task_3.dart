@@ -1,6 +1,7 @@
 /// Object equipable by a [Character].
 abstract class Item {}
-///Entity equipping [Item]s.
+
+/// Entity equipping [Item]s.
 class Character {
   Item? leftHand;
   Item? rightHand;
@@ -29,9 +30,10 @@ class Character {
   ///
   /// If there's already a slot occupied, then throws a [OverflowException].
   void equip(Item item) {
-    // TODO: Implement me. 
+    // TODO: Implement me.
   }
 }
+
 /// [Exception] indicating there's no place left in the [Character]'s slot.
 class OverflowException implements Exception {}
 
