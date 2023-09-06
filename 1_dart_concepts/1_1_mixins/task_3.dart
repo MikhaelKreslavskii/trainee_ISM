@@ -15,7 +15,6 @@ class Character {
 
   /// Returns the total damage of this [Character].
   int get damage {
-    
     // TODO: Implement me.
     return 0;
   }
