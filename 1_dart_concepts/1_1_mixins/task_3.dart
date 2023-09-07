@@ -158,17 +158,7 @@ class Character with Damage, Defend {
 
   void _equipArmor(Item? item)
   {
-      if(item is Helmet)
-    {
-      if(hat==null)
-      {
-        hat = item;
-        return;
-
-      }
-      throw OverflowException();
-        
-    }
+     
 
     if(item is Helmet)
     {
