@@ -2,11 +2,9 @@ extension ConvertInString on DateTime
 {
   String convert()
   {
-    String result = "";
-    result+= this.year.toString()+ "-"+this.month.toString()+"-"+this.day.toString()+" "
-    +this.hour.toString().padLeft(2,'0')+":"+this.minute.toString().padLeft(2,'0')+":"
-    +this.second.toString().padLeft(2,'0');
+  final String result="${year.toString()}-${month.toString()}-${day.toString()} ${hour.toString().padLeft(2,'0')}:${minute.toString().padLeft(2,'0')}:${second.toString().padLeft(2,'0')}";
 
+   
     return result;
   }
 }

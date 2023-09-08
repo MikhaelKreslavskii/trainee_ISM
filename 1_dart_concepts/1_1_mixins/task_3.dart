@@ -72,22 +72,7 @@ mixin Defend
     int countDefence =0;
     for(Item? item in items)
     {
-      if(item is Helmet)
-      {
-        countDefence+=item.defence;
-      }
-
-       if(item is ChestArmour)
-      {
-        countDefence+=item.defence;
-      }
-
-      if(item is Pants)
-      {
-        countDefence+=item.defence;
-      }
-
-      if(item is Boots)
+      if(item is Armor)
       {
         countDefence+=item.defence;
       }
@@ -225,10 +210,12 @@ void main() {
   Weapon gun = Weapon();
   Weapon laser = Weapon();
   Armor helmet = Helmet();
+  Armor chestArmour = ChestArmour();
   Armor helmet2=Helmet();
   ivan.equip(sword);
   ivan.equip(gun);
   ivan.equip(helmet);
+  ivan.equip(chestArmour);
  /// ivan.equip(helmet2);
  /// ivan.equip(laser);
   print(ivan.equipped);
