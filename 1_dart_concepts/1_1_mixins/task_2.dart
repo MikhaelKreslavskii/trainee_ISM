@@ -2,12 +2,12 @@ extension ParserLinks on String {
   List<String> parseLink() {
     List<String> tokens = this.split(' ');
 
-    ///List<String> result =[];
+    
 
     RegExp links = RegExp(r'([\w-]{1,32}\.[\w-]{1,32})');
 
 
-    /// RegExp words = RegExp(r'[\W^]');
+    
 
     String str = this;
     Iterable<RegExpMatch> matchesLinks = links.allMatches(str);
@@ -40,7 +40,7 @@ void main() {
   // - `Hello, google.com, yay` ->
   //   [Text('Hello, '), Link('google.com'), Text(', yay')].
 
-  ///не учитывает запятые
+  
   String text = "Hello, google.com, yandex.ru, yay lfsdlfjd, rtrtr gogle.com";
   print(text.parseLink());
 }
